@@ -14,7 +14,56 @@
     - Display the width and height of your screen
     - Print the current URL using the 'window' object
 -->
+<p id="andNowThis"></p>
 
+<script>
+    document.getElementById("andNowThis").innerHTML =
+        "Screen width is " + screen.width;
+</script>
+
+<p id="anotherOne"></p>
+
+<script>
+    document.getElementById("anotherOne").innerHTML =
+        "Screen height is " + screen.height;
+</script>
+
+<p id="oneMoreTime"></p>
+
+<script>
+    document.getElementById("oneMoreTime").innerHTML =
+        "The full URL of this page is: <br>" + window.location.href;
+</script>
+
+<button onclick="myFunction()">Last Modified</button>
+
+<p id="timeStamp"></p>
+
+<script>
+    function myFunction() {
+        var x = document.lastModified;
+        document.getElementById("timeStamp").innerHTML = x;
+    }
+</script>
+
+<p id="pageTitle"</p>
+<button onclick="myNewFunction()">Page Title</button>
+<script>
+    function myNewFunction() {
+        var x = document.title;
+        document.getElementById("pageTitle").innerHTML = x;
+    }
+</script>
+
+
+<p id="pageURL"></p>
+<button onclick="myOtherFunction()">URL</button>
+<script>
+    function myOtherFunction() {
+        var x = document.URL;
+        document.getElementById("pageURL").innerHTML = x;
+    }
+</script>
 
 </body>
 </html>
